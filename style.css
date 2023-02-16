@@ -1,0 +1,107 @@
+body {
+    background-color: pink;
+    text-align: center;
+    font-family: "Handwritten";
+}
+
+#wrapper {
+    width: 1024px;
+    height: 1024px;
+    position: absolute;
+    margin-left: 27%;
+}
+@font-face {
+    font-family: "Handwritten";
+    src:url("HelloGraduationSans-d9enl.ttf") format("opentype");
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 25px;
+    margin-bottom:-25px;
+}
+p {
+    font-size: 28px;
+    margin-top: 5.5%;
+    margin-left: 6%;
+}
+
+input {
+    height: 26px;
+    width: 565px;
+    margin-top: -5px;
+    margin-left: 2px;
+    font-family: "Handwritten";
+    font-size: 25px;
+    background-color: rgb(0,0,0,0);
+}
+.todo-item {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px; 
+    text-decoration-color: green;
+}
+
+img {
+    width: 650px;
+    box-shadow: 0px 10px 10px 3px gray;
+}
+
+.paper {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    margin-left: 26%; 
+}
+
+.list-container {
+    position:absolute;
+    margin-top: 18.2%;
+    font-size: 30px;
+    margin-left: 25%;
+}
+
+li {
+    text-align:left;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+button {
+    position: absolute;
+    background-color: rgb(0,0,0,0);
+    font-size: 28px;
+    border-radius: 10%;
+    margin-left: 40px;
+    width: 70px;
+    height: 30px;
+    font-family: "Handwritten";
+}
+
+button::before {
+    content: "erase";
+}
+
+button:hover,
+form:hover {
+    background-color: rgb(255, 192, 203, .4);
+    transition: 1s;
+}
+
+button:click {
+    border: solid white;
+}
+
+.clear {
+    position: absolute;
+    border-radius: 0%;
+    margin-left: -570px;
+    margin-top: 827px;
+    width: 570px;
+    height: 86px;
+}
+
+.clear::before {
+    content: "Start Over";
+}
